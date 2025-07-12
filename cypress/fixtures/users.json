@@ -1,23 +1,5 @@
 {
     "usuario_valido": {
-<<<<<<< HEAD
-        "username": "standard_user",
-        "password": "secret_sauce"
-    },
-    "locked_out_user": {
-        "username": "locked_out_user",
-        "password": "secret_sauce"
-    },
-    "problem_user": {
-        "username": "problem_user",
-        "password": "secret_sauce"
-    },
-    "performance_glitch_user": {
-        "username": "performance_glitch_user",
-        "password": "secret_sauce"
-    }
-}
-=======
       "username": "standard_user",
       "password": "secret_sauce"
     },
@@ -56,4 +38,3 @@
           "mensagem": "Epic sadface: Username and password do not match any user in this service"
         }
   }
->>>>>>> d9201dc2bd19bb09c707169087d9738c20d2cb9c

@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-import { loginElement } from "../elements/loginElements";
-import commonPage from "./commonPage";
-
-class LoginPage {
-    preencherCamposLogin(username, password){
-        this.preencherCampoUsuario(username);
-        this.preencherCampoSenha(password);
-    }
-    preencherCampoUsuario(username){
-        commonPage.preencherCampo(loginElement.usernameField, username);
-    };
-
-    preencherCampoSenha(password){
-        commonPage.preencherCampo(loginElement.passwordField, password);
-    };
-
-    clicarBotaoLogin(value){
-        cy.contains(value).click();
-    };
-=======
 const ELEMENTS = {
     username: '[data-test="username"]',
     password: '[data-test="password"]',
@@ -30,13 +9,13 @@ class LoginPage {
 
     preencherUsuario(usuario){
         if (usuario != '') {
-            cy.get(ELEMENTS.username).type(usuario)
+            cy.get(ELEMENTS.username).type(usuario, {delay: 0})
         }
     }
 
     preencherSenha(senha){
         if (senha != '') {
-            cy.get(ELEMENTS.password).type(senha)
+            cy.get(ELEMENTS.password).type(senha, {delay: 0})
         }
     }
 
@@ -45,8 +24,8 @@ class LoginPage {
     }
 
     loginAppAction(usuario,senha){
-        cy.get(ELEMENTS.username).type(usuario)
-        cy.get(ELEMENTS.password).type(senha)
+        cy.get(ELEMENTS.username).type(usuario, {delay: 0})
+        cy.get(ELEMENTS.password).type(senha, {delay: 0})
     }
 
     verificarMensagemDeErro(mensagem){
@@ -54,7 +33,6 @@ class LoginPage {
         .and('contain', mensagem)
     }
 
->>>>>>> d9201dc2bd19bb09c707169087d9738c20d2cb9c
 }
 
 export default new LoginPage();

@@ -29,7 +29,7 @@ module.exports = defineConfig({
         },
       });
 
-      const version = config.env.version || 'qa'
+      const version = config.env.version || 'prd'
       config.env = require(`./cypress/config/${version}.json`);
       config.baseUrl = config.env.baseUrl;
       return config;

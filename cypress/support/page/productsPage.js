@@ -1,5 +1,5 @@
 const ELEMENTS = {
-    title: '[data-test="title"]'
+    title: '[class="product_label"]'
 }
 
 class ProductsPage {
