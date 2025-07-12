@@ -1,0 +1,27 @@
+{
+    "usuario_em_branco": {
+        "username": "{backspace}",
+        "password": "secret_sauce",
+        "message": ""
+    },
+    "senha_em_branco": {
+        "username": "locked_out_user",
+        "password": "{backspace}",
+        "message": ""
+    },
+    "credenciais_invalidas": {
+        "username": "a",
+        "password": "b",
+        "message": ""
+    },
+    "credencial_incorreta": {
+        "username": "standard_user",
+        "password": "secrea",
+        "message": ""
+    },
+    "usuario_bloqueado": {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "message": ""
+    }
+}
